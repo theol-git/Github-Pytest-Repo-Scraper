@@ -13,7 +13,7 @@ from github import Github
 from redis import Redis
 
 requests_cache.install_cache('/database/github_cache', stale_if_error=True)
-GITHUB_API_KEY = "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"
+GITHUB_API_KEY = ""
 
 file_status_db = Redis(host='redis', port=6379, db=0)
 valid_db = Redis(host='redis', port=6379, db=1)
